@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{4F2341FF-59FA-4DC9-8213-81A143C36794}|Default">
+  <MonoDevelop.Ide.ItemProperties.PetPractice.iOS Xamarin.HotReload.GenericExceptionInfoBar.PetPractice.iOS.HideInfoBar="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78E16110-E4A7-4107-9A76-058DDC1B77BC" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PetPractice/App.xaml.cs">
+    <Files>
+      <File FileName="PetPractice/App.xaml.cs" Line="56" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PetPractice" expanded="True">
+            <Node name="PetPractice" expanded="True">
+              <Node name="Xamarin" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
