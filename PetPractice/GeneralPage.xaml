@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PetPractice.GeneralPage">
+    <ContentPage.ToolbarItems> 
+        <ToolbarItem
+            Text="Add"
+            x:Name="filterButton"
+            Clicked="Update"
+        />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="0" Padding="0">
+            <Picker
+                x:Name="filterPicker"
+                Title="Filter"
+                VerticalOptions="LayoutOptions.CenterAndExpand"
+                IsVisible="false"
+            />
+            <SearchBar
+               BackgroundColor="{StaticResource backgroundDark}"
+               Placeholder="Enter Title of Note..."
+               CancelButtonColor="{StaticResource textLight}"
+               PlaceholderColor="Blue"
+               TextColor="{StaticResource textDark}"
+               FontSize="Medium"
+               FontAttributes="Italic"
+               TextChanged="QueryCurrentText"
+            />
+            <ListView ItemsSource="{Binding DisplayItems}" 
+                      SelectionMode="None"
+                      ItemTapped="OnPress"
+                      SeparatorColor="{StaticResource textLight}"
+                      BackgroundColor="{StaticResource backgroundLight}"
+                      HorizontalOptions="CenterAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      Footer=""
+            >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell> 
+                            <ViewCell.ContextActions>
+                                <MenuItem CommandParameter="{Binding .}" Clicked="OnDelete" Text="Delete" IsDestructive="True"/>
+                            </ViewCell.ContextActions>
+                            <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="{StaticResource backgroundDark}">
+                                <Label FontAttributes="Bold" Font="Open Sans" FontSize="Medium" TextColor="{StaticResource textLight}" Text="{Binding Title}" HorizontalOptions="Start"/>
+                                <Label FontAttributes="Bold" Font="Open Sans" FontSize="Medium" TextColor="{StaticResource textLight}" Text="{Binding DateToString}" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid BackgroundColor="{StaticResource backgroundDark}">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1"
+                      VerticalOptions="End"
+                      BackgroundColor="{StaticResource backgroundDark}"
+                      RowSpacing="5"
+                      >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                            x:Name="editButton"
+                            TextColor="{StaticResource textLight}"
+                            FontAttributes="Bold"
+                            Font="Open Sans"
+                            FontSize="Medium"
+                            Clicked="Add_Entry"
+                            Text="Default"
+                    />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PetPractice.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="backgroundDark">#AC0000</Color>
+            <Color x:Key="backgroundLight">#FF0000</Color>
+            <Color x:Key="textDark">#FF8000</Color>
+            <Color x:Key="textLight">#FFF900</Color>
+            <Color x:Key="textContDark">#AC0000</Color>
+            <Color x:Key="contrastLight">#FFFFFF</Color>
+            <Font x:Key="defaultFont">Open Sans</Font>
+            <Style x:Key="gridBottomButton" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource textLight}" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Font" Value="Open Sans" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
+<!--
+PALLET:
+    Red: #FF0000
+    DarkRed: #AC0000
+    Yellow: #FFF900
+    Orange: #FF8000
+    White:  #FFFFFF
+
+    Fonts: Open Sans
+-->

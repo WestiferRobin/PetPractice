@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Settings" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PetPractice.SettingsPage">
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="App Notification">
+                <SwitchCell Text="Allow Notification" On="true"/>
+                <SwitchCell Text="Vibrate" On="true"/>
+            </TableSection>
+            <TableSection Title="E-mail Notifications">
+                <SwitchCell Text="Allow Notifications" On="true"/>
+            </TableSection>
+            <!-- HAVE A THEME SECTION IN HERE -->
+            <TableSection Title="Clear history">
+                <ViewCell x:Name="_clearHistory"
+                          Tapped="HistoryCleared">
+                    <Grid Margin="10,10" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label Text="Clear" />
+                        <Label x:Name="_target"
+                               Grid.Row="1"
+                               Text="Clear History."
+                               IsVisible="false" />
+                    </Grid>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+    
+</ContentPage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PetPractice.MainPage"
+             BackgroundColor="{StaticResource backgroundLight}"
+             Title="Home"
+             >
+    <ContentPage.ToolbarItems>
+         <ToolbarItem Name="Settings" Clicked="Top_Handle_Clicked" ClassId="S" Order="Primary" Priority="-1" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker
+                x:Name="removePicker"
+                Title="Remove"
+                VerticalOptions="LayoutOptions.CenterAndExpand"
+                IsVisible="false"
+            />
+            <CollectionView ItemsSource="{Binding PetList}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"
+                    />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="White" Margin="5">
+                            <BoxView BackgroundColor="{StaticResource backgroundLight}" />
+                            <Grid Margin="10" Padding="10" BackgroundColor="{StaticResource backgroundDark}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="23" />
+                                    <RowDefinition Height="23" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="75" />
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.RowSpan="2" 
+                                        Source="{Binding ImageUrl}" 
+                                        Aspect="AspectFill"
+                                        HeightRequest="60" 
+                                        WidthRequest="60">
+                                </Image>
+                                <Label Grid.Column="1" 
+                                        Text="{Binding Name}"
+                                        TextColor="{StaticResource textDark}"
+                                        LineBreakMode="TailTruncation"
+                                        FontAttributes="Bold" />
+                                <Label Grid.Row="1"
+                                        Grid.Column="1" 
+                                        Text="{Binding PetGender}"
+                                        LineBreakMode="TailTruncation"
+                                        TextColor="{StaticResource textLight}"
+                                        FontAttributes="Italic" 
+                                        VerticalOptions="End" />
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                            Tapped="Pet_Handle_Clicked"
+                                            CommandParameter="{Binding .}"
+                                    />
+                                </Grid.GestureRecognizers>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1"
+                        VerticalOptions="End"
+                        BackgroundColor="{StaticResource backgroundDark}"
+                        RowSpacing="5"
+                        >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                            ClassId="A" Clicked="Bot_Handle_Clicked" Style="{StaticResource gridBottomButton}" Text="Add Pet" />
+                    <Button Grid.Column="1"
+                            ClassId="E" Clicked="Bot_Handle_Clicked" Style="{StaticResource gridBottomButton}" Text="Email" />
+                    <Button Grid.Column="2"
+                            ClassId="R" Clicked="Bot_Handle_Clicked" Style="{StaticResource gridBottomButton}"  Text="Remove Pet" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

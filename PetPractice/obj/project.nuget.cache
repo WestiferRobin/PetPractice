@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "udhJEVZcBqT2zdWumFy+vJOeSdRdzjWrPmqiGv9jFd6ra5OWeZEyIjZ2Aj5xbHZnam0YGFuM8wBEE/GwjYPMXw==",
+  "success": true,
+  "projectFilePath": "/Users/wesitferrobin/Projects/workspace/PetPractice/PetPractice/PetPractice.csproj",
+  "expectedPackageFiles": [
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/wesitferrobin/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/wesitferrobin/.nuget/packages/xamarin.essentials/1.0.1/xamarin.essentials.1.0.1.nupkg.sha512",
+    "/Users/wesitferrobin/.nuget/packages/xamarin.forms/4.1.0.581479/xamarin.forms.4.1.0.581479.nupkg.sha512"
+  ],
+  "logs": []
+}
