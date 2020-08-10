@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.PetPractice.iOS Xamarin.HotReload.GenericExceptionInfoBar.PetPractice.iOS.HideInfoBar="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78E16110-E4A7-4107-9A76-058DDC1B77BC" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PetPractice/App.xaml.cs">
     <Files>
-      <File FileName="PetPractice/App.xaml.cs" Line="56" Column="32" />
+      <File FileName="PetPractice/App.xaml.cs" Line="37" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
