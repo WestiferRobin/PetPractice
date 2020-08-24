@@ -16,12 +16,12 @@ namespace PetPractice
             this.Title = pet.Name + " Stats";
             petFace.Source = pet.ImageUrl;
             petName.Text += string.Concat("\n\t", pet.Name);
-            petType.Text += string.Concat("\n\t", TranslateUtility.TranslateType(pet.PetType));
+            petType.Text += string.Concat("\n\t", pet.PetType);
             petSex.Text += string.Concat("\n\t", pet.PetGender);
             petBirth.Text += string.Concat("\n\t", TranslateUtility.GetBirthDateString(pet.DateOfBirth));
         }
 
-        public void Navigate_Page(object sender, System.EventArgs e)
+        public void Navigate_Page(object sender, EventArgs e)
         {
             Button inst = (Button)sender;
             GeneralPage generalPage = new GeneralPage(GeneralListFlag.DEFAULT, PetInst);

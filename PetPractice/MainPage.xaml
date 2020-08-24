@@ -24,7 +24,7 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid BackgroundColor="White" Margin="5">
+                        <Grid BackgroundColor="{StaticResource backgroundLight}" Margin="0">
                             <BoxView BackgroundColor="{StaticResource backgroundLight}" />
                             <Grid Margin="10" Padding="10" BackgroundColor="{StaticResource backgroundDark}">
                                 <Grid.RowDefinitions>

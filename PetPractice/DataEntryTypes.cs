@@ -20,85 +20,19 @@ namespace PetPractice
         D_DEFAULT
     };
 
-    public enum SnakeTypes
-    {
-        CORN_SNAKE,
-        BALL_PYTHON,
-        GREEN_SNAKE,
-        PINE_SNAKE,
-        GREEN_TREE_PYTHON,
-        MILK_SNAKE,
-        GARTER_SNAKE,
-        WATER_SNAKE,
-        BOA_CONSTRICTOR,
-        BURMESE_PYTHON,
-        RAT_SNAKE,
-        ROSY_BOA,
-        KING_SNAKE,
-        HOGNOSE,
-        GOPHER_SNAKE,
-        SAND_BOA,
-        RAINBOW_BOA,
-        OTHER,
-    };
-
     public static class TranslateUtility
     {
         public static string GetBirthDateString(DateTime target)
         {
             return target.Month + "/" + target.Day + "/" + target.Year;
         }
-        public static string TranslateType(SnakeTypes type)
-        {
-            switch (type)
-            {
-                case SnakeTypes.CORN_SNAKE:
-                    return "Corn Snake";
-                case SnakeTypes.BALL_PYTHON:
-                    return "Ball Python";
-                case SnakeTypes.GREEN_SNAKE:
-                    return "Green Snake";
-                case SnakeTypes.PINE_SNAKE:
-                    return "Pine Snake";
-                case SnakeTypes.GREEN_TREE_PYTHON:
-                    return "Green Tree Python";
-                case SnakeTypes.MILK_SNAKE:
-                    return "Milk Snake";
-                case SnakeTypes.GARTER_SNAKE:
-                    return "Garter Snake";
-                case SnakeTypes.WATER_SNAKE:
-                    return "Water Snake";
-                case SnakeTypes.BOA_CONSTRICTOR:
-                    return "Boa Constrictor";
-                case SnakeTypes.BURMESE_PYTHON:
-                    return "Burmese Python";
-                case SnakeTypes.RAT_SNAKE:
-                    return "Rat Snake";
-                case SnakeTypes.ROSY_BOA:
-                    return "Rosy Boa";
-                case SnakeTypes.KING_SNAKE:
-                    return "King Snake";
-                case SnakeTypes.HOGNOSE:
-                    return "Hognose";
-                case SnakeTypes.GOPHER_SNAKE:
-                    return "Gopher Snake";
-                case SnakeTypes.SAND_BOA:
-                    return "Sand Boa";
-                case SnakeTypes.RAINBOW_BOA:
-                    return "Rainbow Boa";
-                case SnakeTypes.OTHER:
-                    return "Other";
-                default:
-                    return "Non Existant";
-            }
-        }
     }
 
     public class PetData
     {
-        public string ImageUrl { get; set; }        // Later its going to be Photos
+        public Uri ImageUrl { get; set; }        // Later its going to be Photos
         public string Name { get; set; }
-        public SnakeTypes PetType { get; set; }
+        public string PetType { get; set; }
         public string PetGender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public Dictionary<string, ObservableCollection<DataEntry>> QueryLogs { get; set; } = new Dictionary<string, ObservableCollection<DataEntry>>();

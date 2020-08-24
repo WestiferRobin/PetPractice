@@ -17,75 +17,51 @@ namespace PetPractice
         {
             new PetData()
             {
-                ImageUrl = "http://iansvivarium.com/morphs/charcoal/pics/charcoal-e.jpg",
+                ImageUrl = new Uri("https://i.pinimg.com/originals/c8/f4/14/c8f41430be9090a265d77a96906faa4d.jpg"),
                 Name = "Smokey",
-                PetType = SnakeTypes.CORN_SNAKE,
+                PetType = "Corn Snake",
                 PetGender = "Male",
                 DateOfBirth = DateTime.Parse("08/01/2017")
             },
             new PetData()
             {
-                ImageUrl = "http://www.coldblooded-novelties.com/images/Corns/m_ultramotley_het%20Carmel_.jpg",
+                ImageUrl = new Uri("https://cdn11.bigcommerce.com/s-g64jf8ws/images/stencil/1280x1280/products/604/873/CANDY_CANE_CORN__66815.1405184394.JPG?c=2"),
                 Name = "Rosey",
-                PetType = SnakeTypes.CORN_SNAKE,
+                PetType = "Corn Snake",
                 PetGender = "Female",
                 DateOfBirth = DateTime.Parse("08/01/2016")
             },
             new PetData()
             {
-                ImageUrl = "https://www.cornsnake.net/wp-content/uploads/2019/06/pm7559-1050.jpg",
+                ImageUrl = new Uri("https://cdn.shopify.com/s/files/1/0333/1814/1997/files/palmjpg.jpg?v=1582481807"),
                 Name = "Buggsey",
-                PetType = SnakeTypes.CORN_SNAKE,
+                PetType = "Corn Snake",
                 PetGender = "Male",
                 DateOfBirth = DateTime.Parse("08/01/2018")
             },
             new PetData()
             {
-                ImageUrl = "https://www.lllreptile.com/uploads/images/StoreInventoryImage/13318/large",
-                Name = "Daisy",
-                PetType = SnakeTypes.BALL_PYTHON,
-                PetGender = "Female",
-                DateOfBirth = DateTime.Parse("08/01/2017")
-            },
-            new PetData()
-            {
-                ImageUrl = "https://www.lllreptile.com/uploads/images/StoreInventoryImage/13440/large",
-                Name = "Lilly",
-                PetType = SnakeTypes.BALL_PYTHON,
-                PetGender = "Female",
-                DateOfBirth = DateTime.Parse("08/01/2017")
-            },
-            new PetData()
-            {
-                ImageUrl = "https://cdn1.bigcommerce.com/server3900/g64jf8ws/products/441/images/566/DSCN52421__91509.1385941349.1280.1280.JPG?c=2",
-                Name = "Stanley",
-                PetType = SnakeTypes.BALL_PYTHON,
-                PetGender = "Male",
-                DateOfBirth = DateTime.Parse("11/01/2018")
-            },
-            new PetData()
-            {
-                ImageUrl = "https://www.exotic-pets.co.uk/data/images/100l.jpg",
+                ImageUrl = new Uri("https://i.ytimg.com/vi/BL9wH1K9kXc/maxresdefault.jpg"),
                 Name = "Cherry",
-                PetType = SnakeTypes.CORN_SNAKE,
+                PetType = "Corn Snake",
                 PetGender = "Female",
                 DateOfBirth = DateTime.Parse("08/01/2018")
             },
             new PetData()
             {
-                ImageUrl = "https://66.media.tumblr.com/8ae59b35aff6c548fd32b63d40c78ffe/tumblr_inline_orwpiy1pZE1tdmmeu_1280.jpg",
+                ImageUrl = new Uri("https://herpsofnc.org/wp-content/uploads/2016/01/Elaphe-guttata-10.30.02-SREL-SC-in-tree-close-copy.jpg"),
                 Name = "Berry",
-                PetType = SnakeTypes.CORN_SNAKE,
+                PetType = "Corn Snake",
                 PetGender = "Female",
                 DateOfBirth = DateTime.Parse("08/01/2018")
             },
             new PetData()
             {
-                ImageUrl = "http://rivista-cdn.reptilesmagazine.com/images/cache/cache_c/cache_8/cache_6/rainbow-boa-shutterstock_255081319-9ef6a68c.jpeg?ver=1542817181&aspectratio=1.5047021943574",
-                Name = "Crimsion",
-                PetType = SnakeTypes.RAINBOW_BOA,
-                PetGender = "Male",
-                DateOfBirth = DateTime.Parse("12/01/2018")
+                ImageUrl = new Uri("https://cdn.mysmelly.com/image:/sitefs/perm/pi/b/r/0/q/401.280.0_rttx4ycdpx49.jpg"),
+                Name = "Molly",
+                PetType = "Toy Fox Terrier",
+                PetGender = "Female",
+                DateOfBirth = DateTime.Parse("04/01/2010")
             },
         };
 

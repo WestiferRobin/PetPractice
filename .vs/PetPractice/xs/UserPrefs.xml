@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{4F2341FF-59FA-4DC9-8213-81A143C36794}|Default">
   <MonoDevelop.Ide.ItemProperties.PetPractice.iOS Xamarin.HotReload.GenericExceptionInfoBar.PetPractice.iOS.HideInfoBar="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78E16110-E4A7-4107-9A76-058DDC1B77BC" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PetPractice/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PetPractice.iOS/Main.cs">
     <Files>
-      <File FileName="PetPractice/App.xaml.cs" Line="37" Column="1" />
+      <File FileName="PetPractice/MainPage.xaml" Line="27" Column="81" />
+      <File FileName="PetPractice.iOS/Main.cs" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,12 +11,20 @@
           <Node name="PetPractice" expanded="True">
             <Node name="PetPractice" expanded="True">
               <Node name="Xamarin" expanded="True" />
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="EditLogsPage.xaml" expanded="True" />
+              <Node name="EmailPage.xaml" expanded="True" />
+              <Node name="GeneralPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="SettingsPage.xaml" expanded="True" />
+              <Node name="StatsPage.xaml" expanded="True" />
+              <Node name="VerificationPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
